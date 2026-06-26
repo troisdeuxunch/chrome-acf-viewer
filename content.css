@@ -1,0 +1,42 @@
+.acf-name-revealer-badge {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 7px;
+    border: 1px solid #c3c4c7;
+    border-radius: 10px;
+    background: #f0f0f1;
+    color: #50575e;
+    font-family: Menlo, Consolas, monospace;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.6;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: all;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.acf-name-revealer-badge:hover {
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+}
+
+.acf-name-revealer-badge--key {
+    margin-left: 4px;
+    border-style: dashed;
+    background: #fff;
+    color: #787c82;
+}
+
+.acf-name-revealer-badge--key:hover {
+    background: #50575e;
+    border-color: #50575e;
+    color: #fff;
+}
+
+.acf-name-revealer-badge--copied {
+    background: #00a32a;
+    border-color: #00a32a;
+    color: #fff;
+}

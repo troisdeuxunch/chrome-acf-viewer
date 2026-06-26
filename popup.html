@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>ACF Field Name Revealer</title>
+</head>
+<body>
+    <div class="header">
+        <h1>ACF Field Name Revealer</h1>
+        <p>Affiche le <code>data-name</code> des champs ACF à côté de leur label.</p>
+    </div>
+
+    <label class="toggle">
+        <span class="toggle__label">Activer l'affichage</span>
+        <span class="toggle__switch">
+            <input type="checkbox" id="toggle-enabled" checked>
+            <span class="toggle__slider"></span>
+        </span>
+    </label>
+
+    <label class="toggle">
+        <span class="toggle__label">Afficher aussi le <code>data-key</code></span>
+        <span class="toggle__switch">
+            <input type="checkbox" id="toggle-key">
+            <span class="toggle__slider"></span>
+        </span>
+    </label>
+
+    <p class="hint">Fonctionne sur les pages <code>/wp-admin/</code>. Cliquez sur un badge pour copier sa valeur.</p>
+
+    <script src="popup.js"></script>
+</body>
+</html>

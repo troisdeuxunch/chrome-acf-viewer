@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "ACF Field Name Revealer",
+    "version": "1.0.0",
+    "description": "Affiche le data-name (nom interne) des champs ACF à côté de leur label dans l'administration WordPress.",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+            "matches": ["*://*/wp-admin/*"],
+            "js": ["content.js"],
+            "css": ["content.css"],
+            "run_at": "document_idle"
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "ACF Field Name Revealer",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    }
+}
